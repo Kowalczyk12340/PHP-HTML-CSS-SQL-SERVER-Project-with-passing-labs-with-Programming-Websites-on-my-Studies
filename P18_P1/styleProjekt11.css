@@ -1,0 +1,579 @@
+@charset "utf-8";
+
+/* ---------------------------------------------- */
+/* Ogólne style dokumentu. */
+
+body {
+  margin: 0;
+  background-color: #e62d0d;
+  color: #efefef;
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+h2 {
+  font-size: large;
+}
+h2:first-letter {
+  font-size: xx-large;
+}
+
+h3 {
+  font-size: large;
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* Style Strony */
+
+header h1.logo {
+  font-size: 44px;
+  font-weight: 700;
+  color: #ddd;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+#glowneMenu {
+  background-color: #021624;
+  text-align: center;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  font-size: 18px;
+  min-height: 38px;
+  line-height: 200%;
+}
+
+.menu > li {
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-right: 1px dashed #0a2b42;
+}
+
+.menu > li:first-child {
+  border-left: 1px dashed #0a2b42;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #e62d0d;
+}
+.ObszarUslug {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 1200px;
+  text-align: center;
+  padding: 0;
+}
+
+.opis {
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+}
+
+.ObszarRejestracji,
+.ObszarLogowania,
+.ObszarUslug,
+.ObszarOpisu,
+.ObszarUrzadzen,
+.ObszarZarzadzania,
+.ObszarKoszyka,
+.ObszarZarzadzania.ObszarWylogowywania,
+.ObszarPotwierdzeniaDanych {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 1000px;
+  text-align: center;
+  padding: 0;
+  background-color: #021624;
+  min-height: 700px;
+  margin-bottom: 10px;
+}
+.Usluga {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.Usluga1 {
+  display: inline-block;
+  margin-top: 18px;
+}
+
+.Urzadzenia {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.Usluga a,
+.Urzadzenia a {
+  opacity: 0.9;
+}
+
+.Usluga a:hover,
+.Urzadzenia a:hover {
+  opacity: 1;
+}
+
+figure {
+  margin: 8px;
+  padding: 0px;
+}
+figcaption {
+  margin-top: 8px;
+  padding: 0px;
+}
+
+figure a img {
+  width: 300px;
+  height: 300px;
+}
+footer p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+}
+
+/* ---------------------------------------------- */
+/* Styl formularza */
+/* ---------------------------------------------- */
+#formularz {
+  padding: 60px;
+}
+
+#frmLogowanie {
+  margin-top: 15px;
+}
+
+fieldset {
+  margin-top: 10px;
+  width: 520px;
+  border: 1px dotted #9d4f4f;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+label {
+  display: block;
+  min-width: 160px;
+  float: left;
+}
+p.lbl {
+  line-height: 30px; /*Wysrodkoowanie tekstu w pionie*/
+  margin: 10px 0px 0px 0px;
+}
+select {
+  width: 280px;
+  border-radius: 3px;
+  border: 1px solid #c0c0c0;
+  padding: 5px 5px 5px 5px;
+}
+option {
+  padding: 2px 5px 2px 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"] {
+  width: 260px;
+  padding: 5px 10px 5px 10px;
+  color: inherit;
+  border: 1px solid #c1c1c1;
+  border-radius: 3px;
+  color: black;
+}
+
+label.crc {
+  width: 300px;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  margin-left: 130px;
+}
+
+select.sel {
+  margin-left: 120px;
+}
+
+textarea {
+  width: 422px;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 3px;
+}
+
+textarea:focus {
+  border: 1px solid #c76060;
+  box-shadow: 0px 0px 5px #c76060;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  min-width: 90px;
+  min-height: 30px;
+  border-radius: 5px;
+  padding: 7px 10px 7px 10px;
+}
+input[type="submit"] {
+  background-color: #0062c4;
+  color: #ffffff;
+  border: 1px solid #004a95;
+}
+input[type="reset"] {
+  background-color: #ffffff;
+  color: #4f4f4f;
+  border: 1px solid #606060;
+}
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background-color: #2185e8;
+}
+input[type="reset"]:hover,
+input[type="reset"]:focus {
+  background-color: #eaeaea;
+}
+
+/* ---------------------------------------------- */
+/* Styl tabeli. */
+table {
+  border-spacing: 0px;
+  text-align: center;
+  background: transparent;
+  table-layout: fixed;
+  width: 1400px;
+  padding: 0px;
+  margin: 0 auto;
+}
+thead {
+  font-weight: bold;
+  height: 40px;
+}
+thead td {
+  border-bottom: 2px solid #8a4848;
+  height: 30px;
+}
+thead a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+thead a:hover {
+  text-decoration: underline;
+  color: #c89285;
+}
+tbody td {
+  border-bottom: 1px solid #c89285;
+  height: 30px;
+}
+tbody tr:nth-child(even) {
+  background-color: #9f6a16;
+}
+tfoot {
+  font-weight: bold;
+  text-align: left;
+  height: 30px;
+}
+tfoot td {
+  border-top: 1px solid #8a4848;
+  border-bottom: 1px solid #8a4848;
+  padding-left: 30px;
+  height: 30px;
+}
+tfoot td:nth-child(2) {
+  background-color: #8a4848;
+  text-align: center;
+}
+
+.zakup {
+  background-color: #ea1626;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/* ---------------------------------------------- 
+Style komunikatow
+*/
+.msg {
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.success {
+  background-color: #b9f0b2;
+  border: 1px solid #8bd681;
+  color: black;
+}
+
+.error {
+  background-color: #ffc4c6;
+  border: 1px solid #fa9093;
+  color: black;
+}
+
+.info {
+  background-color: #c4c4ff;
+  border: 1px solid #8888e0;
+  color: black;
+}
+
+.warn {
+  background-color: #fff5a8;
+  border: 1px solid #fdc14e;
+  color: black;
+}
+
+.def {
+  background-color: #af7474;
+  border: 1px solid #ededed;
+  color: black;
+}
+
+.tbl_operacje {
+  margin-left: 10px;
+  width: 150px;
+}
+.nowy {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.edycja {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.usun {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.powrot {
+  background-color: #008cba;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.szczegoly {
+  background-color: darkcyan;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+input[type="button"] {
+  background-color: #ff9900;
+  color: #ffffff;
+  border: 1px solid #004a95;
+}
+input[type="button"]:focus,
+input[type="button"]:hover {
+  background-color: #cc7a00;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  .ObszarUslug {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1200px;
+    text-align: center;
+    padding: 0;
+  }
+
+  .opis {
+    min-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+  }
+
+  .ObszarRejestracji,
+  .ObszarLogowania,
+  .ObszarUslug,
+  .ObszarOpisu,
+  .ObszarUrzadzen,
+  .ObszarZarzadzania,
+  .ObszarKoszyka,
+  .ObszarZarzadzania.ObszarWylogowywania,
+  .ObszarPotwierdzeniaDanych {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1000px;
+    text-align: center;
+    padding: 0;
+    background-color: #021624;
+    min-height: 700px;
+    margin-bottom: 10px;
+  }
+  .Usluga {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .Usluga1 {
+    display: inline-block;
+    margin-top: 18px;
+  }
+
+  .Urzadzenia {
+    display: inline-block;
+    margin-top: 10px;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .ObszarUslug {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1200px;
+    text-align: center;
+    padding: 0;
+  }
+
+  .opis {
+    min-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+  }
+
+  .ObszarRejestracji,
+  .ObszarLogowania,
+  .ObszarUslug,
+  .ObszarOpisu,
+  .ObszarUrzadzen,
+  .ObszarZarzadzania,
+  .ObszarKoszyka,
+  .ObszarZarzadzania.ObszarWylogowywania,
+  .ObszarPotwierdzeniaDanych {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1000px;
+    text-align: center;
+    padding: 0;
+    background-color: #021624;
+    min-height: 700px;
+    margin-bottom: 10px;
+  }
+  .Usluga {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .Usluga1 {
+    display: inline-block;
+    margin-top: 18px;
+  }
+
+  .Urzadzenia {
+    display: inline-block;
+    margin-top: 10px;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 300px) {
+  .ObszarUslug {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1200px;
+    text-align: center;
+    padding: 0;
+  }
+
+  .opis {
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+  }
+
+  .ObszarRejestracji,
+  .ObszarLogowania,
+  .ObszarUslug,
+  .ObszarOpisu,
+  .ObszarUrzadzen,
+  .ObszarZarzadzania,
+  .ObszarKoszyka,
+  .ObszarZarzadzania.ObszarWylogowywania,
+  .ObszarPotwierdzeniaDanych {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    text-align: center;
+    padding: 0;
+    background-color: #021624;
+    min-height: 700px;
+    margin-bottom: 10px;
+  }
+  .Usluga {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .Usluga1 {
+    display: inline-block;
+    margin-top: 18px;
+  }
+
+  .Urzadzenia {
+    display: inline-block;
+    margin-top: 10px;
+  }
+}
